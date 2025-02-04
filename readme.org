@@ -23,22 +23,22 @@ Tmux manages sessions, each session is made up of several windows. Each window c
 A list of keybindings in this tmux config. The leader key is C-SPC.
 #+OPTIONS: \n:t
 | COMMAND               | KEYBINDING | DESCRIPTION                        |
-| Tmux related bindings                                                   |
+|                      Tmux related bindings                              |
 | \                     | C-SPC I    | Reinstall the packages             |
 | source-file           | C-SPC R    | Resource the configuration         |
 | command-prompt        | C-SPC :    | Use Tmux commands                  |
 | \                     | C-SPC w    | List all open sessions and windows |
 | save-buffer           | C-SPC C-s  | Save panes and windows             |
-| Session related                                                         |
+|                      Session related                                    |
 | new-session           | C-SPC q    | Create a new session               |
 | kill-session          | C-SPC X    | Kill session                       |
 | rename-session        | C-SPC s    | Rename the session                 |
-| Window related                                                          |
+|                      Window related                                     |
 | new-window            | C-SPC c    | Create a new window                |
 | rename-window         | C-SPC r    | Rename the window                  |
 | split-window -v       | C-SPC \    | Split vertically                   |
 | split-window -h       | C-SPC -    | Split horizontally                 |
-| Pane related                                                            |
+|                      Pane related                                       |
 | kill-pane             | C-SPC x    | Kill pane                          |
 | resize-pane           | C-SPC hjkl | Pane resizing                      |
 
