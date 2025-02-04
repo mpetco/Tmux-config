@@ -1,5 +1,6 @@
 * Description
-This is my tmux config \n
+This is my tmux config  
+#+OPTIONS: \n:t
 /PS: don't forget to run `prefix + I` to install the plugins/
 
 ** List of plugins used
@@ -14,13 +15,13 @@ This is my tmux config \n
 * Brief terminology overview
 Tmux manages sessions, each session is made up of several windows. Each window contains either one or more panes. A pane is ususally a shell session.
 
-/Pretty picture/ \n
-#+ATTR_ORG: :width 300px :align left
+/Pretty picture/ \\
+#+ATTR_ORG: :align center 
 [[./screenshots/screenshot1.png]]
 
 * Usage 
-A list of keybindings in this tmux config. The leader key is C-SPC. \n
-+-----------------------+------------+------------------------------------+
+A list of keybindings in this tmux config. The leader key is C-SPC.
+#+OPTIONS: \n:t
 | COMMAND               | KEYBINDING | DESCRIPTION                        |
 +-----------------------+------------+------------------------------------+
 | Tmux related bindings                                                   |
