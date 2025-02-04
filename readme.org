@@ -1,0 +1,62 @@
+* Description
+This is my tmux config
+/PS: don't forget to run `prefix + I` to install the plugins/
+
+** List of plugins used
+- [[https://github.com/tmux-plugins/tpm][TPM]] - The tmux plugin manager, and installs and loads tmux plugins
+- [[https://github.com/tmux-plugins/tmux-sensible][Tmux-sensible]] - Configures basic tmux settings, sane defaults
+- [[https://github.com/christoomey/vim-tmux-navigator][Vim-tmux-navigator]] - Painless navigation between tmux panes and vim splits
+- [[https://github.com/tmux-plugins/tmux-yank][Tmux-yank]] - Copies to the system clipboard from tmux
+- [[https://github.com/tmux-plugins/tmux-resurrect][Tmux-resurrect]] - Save tmux environments between system poweroffs
+- [[https://github.com/tmux-plugins/tmux-resurrect][Tmux-continuum]] - Continuously saves the tmux environment
+- [[https://github.com/janoamaral/tokyo-night-tmux][Tokyo-night-tmux]] - My favorite colorscheme for tmux
+
+* Brief terminology overview
+Tmux manages sessions, each session is made up of several windows. Each window contains either one or more panes. A pane is ususally a shell session.
+
+/Pretty picture/
+[[./screenshots/screenshot1.png][A screenshot explaining it]]
+
+* Usage 
+A list of keybindings in this tmux config. The leader key is C-SPC.
++-----------------------+------------+------------------------------------+
+| COMMAND               | KEYBINDING | DESCRIPTION                        |
++-----------------------+------------+------------------------------------+
+| Tmux related bindings                                                   |
++-----------------------+------------+------------------------------------+
+| \                     | C-SPC I    | Reinstall the packages             |
++-----------------------+------------+------------------------------------+
+| source-file           | C-SPC R    | Resource the configuration         |
++-----------------------+------------+------------------------------------+
+| command-prompt        | C-SPC :    | Use Tmux commands                  |
++-----------------------+------------+------------------------------------+
+| \                     | C-SPC w    | List all open sessions and windows |
++-----------------------+------------+------------------------------------+
+| save-buffer           | C-SPC C-s  | Save panes and windows             |
++-----------------------+------------+------------------------------------+
+| Session related                                                         |
++-----------------------+------------+------------------------------------+
+| new-session           | C-SPC q    | Create a new session               |
++-----------------------+------------+------------------------------------+
+| kill-session          | C-SPC X    | Kill session                       |
++-----------------------+------------+------------------------------------+
+| rename-session        | C-SPC s    | Rename the session                 |
++-----------------------+------------+------------------------------------+
+| Window related                                                          |
++-----------------------+------------+------------------------------------+
+| new-window            | C-SPC c    | Create a new window                |
++-----------------------+------------+------------------------------------+
+| rename-window         | C-SPC r    | Rename the window                  |
++-----------------------+------------+------------------------------------+
+| split-window -v       | C-SPC \    | Split vertically                   |
++-----------------------+------------+------------------------------------+
+| split-window -h       | C-SPC -    | Split horizontally                 |
++-----------------------+------------+------------------------------------+
+| Pane related                                                            |
++-----------------------+------------+------------------------------------+
+| kill-pane             | C-SPC x    | Kill pane                          |
++-----------------------+------------+------------------------------------+
+| resize-pane           | C-SPC hjkl | Pane resizing                      |
++-----------------------+------------+------------------------------------+
+
+
